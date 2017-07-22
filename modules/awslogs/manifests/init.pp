@@ -1,4 +1,4 @@
-class mymodule::myklass{
+class awslogs (
 
   file {
     'copy_awslogs_conf':
