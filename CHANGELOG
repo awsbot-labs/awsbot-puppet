@@ -1,1 +1,2 @@
  - Makefile and corrected awslogs error
+ - changed puppet to log to /var/log/puppet.log
