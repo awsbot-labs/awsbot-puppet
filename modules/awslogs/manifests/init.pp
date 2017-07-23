@@ -13,7 +13,7 @@ class awslogs {
 
   exec {
     'get_awslogs_script':
-      command => 'curl -o /usr/local/bin/awslogs-gent-setup.py  https://s3.amazonaws.com//aws-cloudwatch/downloads/latest/awslogs-agent-setup.py',
+      command => 'curl -o /usr/local/bin/awslogs-agent-setup.py  https://s3.amazonaws.com//aws-cloudwatch/downloads/latest/awslogs-agent-setup.py',
       path => '/usr/bin',
       notify => Exec['run_awslogs_script'],
   }
