@@ -10,3 +10,4 @@
  - update
  - nginx logs
  - update
+ - updated with better puppet module for logs agent

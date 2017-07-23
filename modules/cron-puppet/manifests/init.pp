@@ -14,4 +14,11 @@ class cron-puppet {
         minute  => '*/1',
         require => File['post-hook'],
     }
+    
+    cloudwatch_agent::log { '/var/log/puppet.log':
+      datetime_format  => '%b %d %H:%M:%S',
+      log_stream_name  => '{instance_id}',
+      buffer_duration  => '5000',
+      initial_position => 'start_of_file',
+    }
 }
