@@ -3,7 +3,7 @@ class awslogs {
   file {
     'copy_awslogs_conf':
       ensure => 'file',
-      source => 'puppet:///modules/awslogs/awslog.conf',
+      source => 'puppet:///modules/awslogs/awslogs.conf',
       path   => '/etc/awslogs.conf',
       owner  => 'root',
       group  => 'root',
