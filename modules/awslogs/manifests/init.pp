@@ -22,6 +22,5 @@ class awslogs {
     'run_awslogs_script':
       command => 'python /usr/local/bin/awslogs-agent-setup.py --region=us-east-2 -n -c /etc/awslogs.conf',
       path => '/usr/bin',
-      refreshonly => true
   }
 }
