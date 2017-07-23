@@ -1,5 +1,5 @@
-class vim (
-  package ( 'vim':
+class vim {
+  package { 'vim':
     ensure => 'installed'
-  ) 
-)
+  }
+}
