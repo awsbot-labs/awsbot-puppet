@@ -14,12 +14,14 @@ class awslogs {
   exec {
     'get_awslogs_script':
       command => 'curl -o /usr/local/bin/awslogs-gent-setup.py  https://s3.amazonaws.com//aws-cloudwatch/downloads/latest/awslogs-agent-setup.py',
+      path => '/usr/bin',
       notify => Exec['run_awslogs_script'],
   }
   
   exec {
     'run_awslogs_script':
       command => 'python /usr/local/bin/awslogs-agent-setup.py --region=us-east-2 -n -f /etc/awslogs.conf',
+      path => '/usr/bin',
       refreshonly => true
   }
 }
