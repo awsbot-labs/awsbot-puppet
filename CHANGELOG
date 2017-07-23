@@ -2,3 +2,4 @@
  - changed puppet to log to /var/log/puppet.log
  - change to ubuntu
  - Updated awlsogs module
+ - corrected parentehese typo

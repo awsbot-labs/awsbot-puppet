@@ -1,4 +1,4 @@
-class awslogs (
+class awslogs {
 
   file {
     'copy_awslogs_conf':
