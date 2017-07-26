@@ -10,7 +10,10 @@
  - update
  - nginx logs
  - update
+<<<<<<< HEAD
  - updated with better puppet module for logs agent
  - update
+=======
+>>>>>>> 08fa583f675461fae5df1a578922dea1ccbaaf72
  - updated with service for awslogs
  - awslogs service
