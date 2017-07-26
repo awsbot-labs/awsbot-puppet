@@ -1,7 +1,6 @@
 node default {
-    class { 'cloudwatch_agent':
-      region => 'us-east-2',
-    }
+    include awslogs
+    include cloudwatch
     include cron-puppet
     include vim
 }
