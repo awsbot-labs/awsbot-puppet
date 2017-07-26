@@ -12,3 +12,5 @@
  - update
  - updated with better puppet module for logs agent
  - update
+ - updated with service for awslogs
+ - awslogs service
