@@ -10,3 +10,5 @@
  - update
  - nginx logs
  - update
+ - updated with service for awslogs
+ - awslogs service
